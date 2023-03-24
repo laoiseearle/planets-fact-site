@@ -143,3 +143,58 @@ header {
 .neptune {
   background-color: #497efa;
 }
+
+@media screen and (min-width: 48rem) {
+  .ham-icon,
+  .planet-nav-icon,
+  .arrow-icon {
+    display: none;
+  }
+
+  header {
+    padding-block: 2rem 2.2em;
+    padding-inline: 0;
+  }
+
+  .header {
+    display: block;
+    text-align: center;
+  }
+
+  .header-nav {
+    position: static;
+  }
+
+  .navigation-links {
+    display: flex;
+    max-width: 41.5rem;
+    margin: auto;
+    gap: 2rem;
+    padding-top: 3.3rem;
+  }
+
+  .navigation-links li {
+    display: block;
+    padding: 0;
+    border: none;
+  }
+
+  .navigation-links h2 {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  header {
+    padding-inline: 2rem 2.5rem;
+    padding-block: 1.5rem;
+  }
+
+  .header {
+    display: flex;
+  }
+
+  .navigation-links {
+    padding: 0;
+  }
+}
