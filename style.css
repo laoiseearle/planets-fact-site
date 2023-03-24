@@ -65,15 +65,15 @@ header {
 
 .header-nav {
   display: none;
-}
-
-.menu-open {
-  display: block;
   background: #070724;
   position: absolute;
   top: 4.35rem;
   left: 0;
   right: 0;
+}
+
+.menu-open {
+  display: block;
 }
 
 .navigation-links {
@@ -163,6 +163,7 @@ header {
 
   .header-nav {
     position: static;
+    display: block;
   }
 
   .navigation-links {
