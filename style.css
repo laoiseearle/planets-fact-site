@@ -5,3 +5,141 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+html {
+  background-color: #070724;
+  background-image: url(assets/background-stars.svg);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* --------------------------------- Typography --------------------------------- */
+
+h1,
+h2 {
+  font-family: 'Antonio', sans-serif;
+}
+
+header h2 {
+  font-size: 1.75rem;
+  letter-spacing: -1.05px;
+}
+
+.navigation-links h2 {
+  font-size: 0.9375rem;
+  font-size: 1rem;
+  font-family: 'League Spartan', sans-serif;
+  letter-spacing: 1.36px;
+}
+
+p {
+  text-transform: capitalize;
+}
+
+/* --------------------------------- Header --------------------------------- */
+
+header {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ham-icon {
+  width: 1.5rem;
+  height: 1.0625rem;
+}
+
+.header-nav {
+  display: none;
+}
+
+.menu-open {
+  display: block;
+  background: #070724;
+  position: absolute;
+  top: 4.35rem;
+  left: 0;
+  right: 0;
+}
+
+.navigation-links {
+  padding-top: 2.75rem;
+  padding-inline: 1.5rem;
+}
+
+.navigation-links li {
+  display: flex;
+  position: relative;
+  padding-block: 1.5rem;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navigation-links li:first-of-type {
+  padding-top: 0;
+}
+
+.navigation-links li:last-of-type {
+  border: none;
+}
+
+.arrow-icon {
+  position: absolute;
+  right: 0;
+}
+
+/* ------- Planet Icons ------- */
+
+.planet-nav-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: 1.5rem;
+}
+
+.mercury {
+  background-color: #def4fc;
+}
+
+.venus {
+  background-color: #f7cc7f;
+}
+
+.earth {
+  background-color: #545bfe;
+}
+
+.mars {
+  background-color: #ff6a45;
+}
+
+.jupiter {
+  background-color: #ecad7a;
+}
+
+.saturn {
+  background-color: #fccb6b;
+}
+
+.uranus {
+  background-color: #65f0d5;
+}
+
+.neptune {
+  background-color: #497efa;
+}
