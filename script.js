@@ -17,3 +17,10 @@ const openMenu = () => {
     ham.style.filter = 'opacity(.25)';
   }
 };
+
+const changeTab = tabName => {
+  const activeTabs = document.querySelectorAll('.active-tab');
+  activeTabs.forEach(tab => tab.classList.remove('active-tab'));
+  selectedTab = document.querySelectorAll(`.${tabName}`);
+  selectedTab.forEach(tab => tab.classList.add('active-tab'));
+};
