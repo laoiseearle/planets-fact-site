@@ -11,6 +11,7 @@ html {
   background-image: url(assets/background-stars.svg);
   color: #fff;
   text-transform: uppercase;
+  font-family: 'League Spartan', sans-serif;
 }
 
 li {
@@ -29,20 +30,51 @@ h2 {
   font-family: 'Antonio', sans-serif;
 }
 
+h1 {
+  font-size: 2.5rem;
+}
+
 header h2 {
   font-size: 1.75rem;
   letter-spacing: -1.05px;
 }
 
 .navigation-links h2 {
-  font-size: 0.9375rem;
   font-size: 1rem;
   font-family: 'League Spartan', sans-serif;
   letter-spacing: 1.36px;
 }
 
+.info-tabs li {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+li.active-tab {
+  color: #fff;
+}
+
 p {
-  text-transform: capitalize;
+  text-transform: none;
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 0.5px;
+}
+
+.tab p:first-of-type {
+  padding-bottom: 0.625rem;
+}
+
+.source {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.source a {
+  text-decoration: underline;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 /* --------------------------------- Header --------------------------------- */
@@ -74,6 +106,7 @@ header {
 
 .menu-open {
   display: block;
+  z-index: 1;
 }
 
 .navigation-links {
@@ -142,6 +175,75 @@ header {
 
 .neptune {
   background-color: #497efa;
+}
+
+/* ------- Planet Tabs ------- */
+
+.planet-grid {
+  display: grid;
+  text-align: center;
+}
+
+.info-tabs {
+  display: flex;
+  padding: 1.25rem 1.5rem;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.tab {
+  display: none;
+}
+
+.active-tab {
+  display: block;
+}
+
+li.active-tab {
+  position: relative;
+}
+
+li.active-tab::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 1.75rem;
+  width: 100%;
+  height: 0.25rem;
+  background-color: #6d2ed5;
+}
+
+/* ------- Planet Images ------- */
+
+.planet-images {
+  position: relative;
+  padding-block: 4rem;
+  margin: auto;
+}
+
+.planet-images-earth img {
+  width: 10.8125rem;
+}
+
+img.planet-geology {
+  width: 4rem;
+  position: absolute;
+  bottom: 0;
+  bottom: 3.5rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* ------- Planet Info ------- */
+
+.planet-info {
+  padding-inline: 1.5rem;
+  padding-bottom: 1.75rem;
+}
+
+.planet-info h1 {
+  padding-bottom: 1rem;
 }
 
 @media screen and (min-width: 48rem) {
