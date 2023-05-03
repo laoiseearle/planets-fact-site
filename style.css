@@ -1,7 +1,6 @@
 :root {
   --active-background: #6d2ed5;
   --planet-image-size: 10.8125rem;
-  --planet-image-size-large: 17.8125rem;
 }
 
 *,
@@ -243,9 +242,8 @@ li.active-tab::after {
 }
 
 img.planet-geology {
-  width: 4rem;
+  width: calc(var(--planet-image-size) / (2.75));
   position: absolute;
-  bottom: 0;
   bottom: 3.5rem;
   left: 0;
   right: 0;
@@ -339,6 +337,9 @@ p.source img {
   }
 
   /* --------------------------------- Planet Grid: 48rem --------------------------------- */
+  :root {
+    --planet-image-size: 17.8125rem;
+  }
 
   .planet-grid,
   .planet-stats {
@@ -358,10 +359,6 @@ p.source img {
   .planet-images {
     grid-row: 1 / 2;
     grid-column: 1 / 3;
-  }
-
-  .planet-images img {
-    width: var(--planet-image-size-large);
   }
 
   /* ------- Info Tabs ------- */
