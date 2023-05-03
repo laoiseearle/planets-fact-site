@@ -286,6 +286,17 @@ p.source img {
 
 /* --------------------------------- Media Queries --------------------------------- */
 
+@media (hover: hover) {
+  .info-tabs li:hover,
+  .ham-icon {
+    cursor: pointer;
+  }
+
+  li.active-tab::after {
+    cursor: default;
+  }
+}
+
 @media screen and (min-width: 48rem) {
   .ham-icon,
   .planet-nav-icon,
