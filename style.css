@@ -54,6 +54,9 @@ header h2 {
   font-size: 0.75rem;
   letter-spacing: 2px;
   color: rgba(255, 255, 255, 0.5);
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 li.active-tab {
