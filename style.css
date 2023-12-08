@@ -280,7 +280,7 @@ p.source img {
 
 .stat-item {
   display: flex;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   justify-content: space-between;
   align-items: center;
   padding-inline: 1.5rem;
@@ -390,7 +390,7 @@ p.source img {
   .info-tabs li {
     padding-left: 1.5rem;
     padding-block: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
   }
 
   .info-tabs li::before {
