@@ -99,11 +99,11 @@ p {
 /* --------------------------------- Header --------------------------------- */
 
 header {
-  padding: 1rem 1.5rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .header {
+  padding: 1rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -196,17 +196,36 @@ header {
   background-color: #497efa;
 }
 
-/* ------- Planet Tabs ------- */
+/* --------------------------------- Planet Grid --------------------------------- */
+
+.header,
+.navigation-links,
+.planet-grid,
+.planet-stats {
+  text-align: center;
+  max-width: 35rem;
+  margin: 0 auto;
+}
 
 .planet-grid {
   display: grid;
   text-align: center;
 }
 
+/* ------- Planet Tabs ------- */
+
 .info-tabs {
   display: flex;
   padding: 1.25rem 1.5rem;
   justify-content: space-between;
+}
+
+.info-tabs::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 2rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -334,6 +353,7 @@ p.source img {
 
   .navigation-links {
     display: flex;
+    justify-content: center;
     max-width: 41.5rem;
     margin: auto;
     gap: 2rem;
@@ -353,6 +373,15 @@ p.source img {
   /* --------------------------------- Planet Grid: 48rem --------------------------------- */
   :root {
     --planet-image-size: 17.8125rem;
+  }
+
+  .header,
+  .navigation-links,
+  .planet-grid,
+  .planet-stats {
+    text-align: center;
+    max-width: 70rem;
+    margin: 0 auto;
   }
 
   .planet-grid,
@@ -385,6 +414,10 @@ p.source img {
     justify-content: unset;
     gap: 1rem;
     padding-top: 2.275rem;
+  }
+
+  .info-tabs::after {
+    border: none;
   }
 
   .info-tabs li {
