@@ -314,6 +314,16 @@ p.source img {
     cursor: pointer;
   }
 
+  .info-tabs li:hover {
+    background-color: #38384f;
+    border-color: #38384f;
+  }
+
+  li.active-tab:hover {
+    background-color: var(--active-background);
+    border-color: var(--active-background);
+  }
+
   li.active-tab::after {
     cursor: default;
   }
