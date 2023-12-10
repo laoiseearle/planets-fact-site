@@ -266,7 +266,7 @@ li.active-tab::after {
 img.planet-geology {
   width: calc(var(--planet-image-size) / (2.75));
   position: absolute;
-  bottom: 3.5rem;
+  bottom: 3rem;
   left: 0;
   right: 0;
   margin: auto;
@@ -473,16 +473,103 @@ p.source img {
 }
 
 @media screen and (min-width: 90rem) {
+  :root {
+    --planet-image-size: 28.125rem;
+  }
+
+  /* --------------------------------- Typography: 90rem --------------------------------- */
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  .navigation-links h2 {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.875rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .stat-item h2 {
+    font-size: 2.375rem;
+  }
+
+  .stat-item p {
+    font-size: 0.875rem;
+  }
+
+  .info-tabs li {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .info-tabs li::before {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  /* --------------------------------- Header: 90rem --------------------------------- */
+
   header {
-    padding-inline: 2rem 2.5rem;
-    padding-block: 1.5rem;
+    padding: 0;
   }
 
   .header {
     display: flex;
+    max-width: 100rem;
+    padding-inline: 2rem 2.5rem;
+    padding-block: 1.5rem;
   }
 
   .navigation-links {
     padding: 0;
+  }
+
+  /* --------------------------------- Planet Grid: 90rem --------------------------------- */
+
+  .planet-grid {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1.25fr 0.75fr;
+    padding-top: 7.875rem;
+    column-gap: 11.25rem;
+    max-height: 46.75rem;
+    padding-inline: 0;
+  }
+
+  .planet-info h1 {
+    padding-bottom: 1.625rem;
+  }
+
+  /* ------- Planet Images ------- */
+
+  .planet-images {
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+  }
+
+  img.planet-geology {
+    bottom: 1rem;
+  }
+
+  /* ------- Info Tabs ------- */
+
+  .info-tabs {
+    gap: 1rem;
+    padding: 0;
+  }
+
+  /* ------- Planet Stats ------- */
+
+  .planet-stats {
+    gap: 1.875rem;
+    padding-inline: 0;
+  }
+
+  .stat-item {
+    align-items: left;
+    padding-block: 1.6875rem;
   }
 }
